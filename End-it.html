@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تهنئة تخرج دفعة حاسبات ومعلومات جامعة الزقازيق">
+    <title>خريجين حاسبات الزقازيق</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&family=Outfit:wght@400;700&family=Reem+Kufi:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="celebrationAudio" src="assets/مسك الختام رضخت اخيرا - خليل البلوشي .mp3" preload="auto"></audio>
+
+    <canvas id="matrixCanvas"></canvas>
+
+    <div id="scene1" class="scene active">
+        <div class="gift-container">
+            <img id="giftBox" src="assets/gift-box-before.png" alt="Gift Box" class="shake">
+            <p id="giftText" class="funny-text">افتح يطالب يغلبان </p>
+        </div>
+    </div>
+
+    <div id="countdownContainer" class="scene">
+        <div id="countdown">5</div>
+    </div>
+
+    <div id="scene2" class="scene">
+        <div class="image-overlay"></div>
+        <img id="graduationImage" src="assets/graduation persons image.jpg" alt="Graduation">
+        <div class="text-container">
+            <h1 id="typewriterText"><span id="typeTarget"></span><span class="cursor"></span></h1>
+            <h2 id="facultyText" class="hidden">Faculty of Computer and Information Science</h2>
+            <h3 id="universityText" class="hidden">Zagazig University</h3>
+        </div>
+    </div>
+
+    <div id="flowersContainer"></div>
+
+    <div id="scene3" class="scene">
+        <div class="end-container">
+            <h1 class="the-end">The End</h1>
+            <h2 class="congrats-text"><span id="congratsTarget"></span><span class="cursor hidden" id="congratsCursor"></span></h2>
+        </div>
+    </div>
+
+    <div style="position: fixed; bottom: 10px; left: 0; width: 100%; text-align: center; font-size: 12px; color: rgba(255, 255, 255, 0.5); z-index: 1000; font-family: 'Outfit', 'Cairo', sans-serif; pointer-events: none;">
+        made with ❤️ by karim magdy
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
